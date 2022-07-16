@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>beautiful</title>
+
+	<style type="text/css">
+		
+		@import url(https://fonts.googleapis.com/css?family=Patua+One);
+		@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+
+* {
+  font-family: 'Patua One', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+canvas {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+html {
+  overflow: auto;
+  background-color: rgba(0, 48, 48, 1.0);
+  background-image: radial-gradient(circle, rgba(0, 96, 96, 1.0), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+}
+html, body {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  margin-top: 25%;
+  font-size: 100px;
+  color: white;
+  text-shadow: 0px 0px 8px white;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 10;
+}
+
+h1 {
+  color: white;
+  font-size: 90px;
+  text-shadow: 0px 0px 8px white;
+  justify-content: center;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 10;
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+
+#6eeb83: #6eeb83;
+$green: #6eeb83;
+$blue: #1be7ff;
+$yellow: #e4ff1a;
+$magenta: #e500a4;
+$default: #d1d5da;
+$defaultBg: #2f363d;
+$dark: #c9d1d9;
+: #0d1117;
+
+$easingFunction: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+* {
+	box-sizing: border-box;
+}
+
+.sr-only {
+	visibility: hidden;
+}
+
+.hidden {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: "Londrina Solid", cursive;
+	position: relative;
+	background: ;
+}
+
+.challenge-title {
+	text-align: center;
+	padding: 0;
+	margin: 1rem 0 0.5rem;
+	color: #6eeb83;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.challenge-subtitle {
+	text-align: center;
+	margin: 0;
+	font-size: 1.125rem;
+	font-weight: 400;
+	color: darken(#6eeb83, 40%);
+}
+
+.challenge-part-of {
+	text-align: center;
+	margin: 1rem 0 0;
+	font-size: 0.875rem;
+	color: darken(#d1d5da, 10%);
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	a,
+	a:visited {
+		color: darken(#d1d5da, 10%);
+		text-decoration-style: wavy;
+		&:hover,
+		&:active {
+			color: lighten(darken(#d1d5da, 10%), 10%);
+		}
+	}
+}
+
+	.happy{
+		font-size: 8rem;
+		color: white;
+		font-weight: 100;
+		transform: translateY(85px);
+		padding: 1rem 0;
+		background-color: ;
+		animation: showUp .7s $easingFunction forwards;
+	}
+
+	.twentyseven {
+		font-size: 10rem;
+		color: lighten(, 10%);
+		font-weight: 900;
+		animation: blinkColor 2s $easingFunction infinite forwards .7s;
+		text-shadow: 0 0 10px transparent;
+	}
+	.birthday {
+		font-size: 5.5rem;
+		color: white;
+		transform: translateY(-85px);
+		background-color: ;
+		padding: 1rem 0;
+		animation: showDown .7s $easingFunction forwards .4s;
+	}
+	.ballon {
+		color: white;
+	 	position: absolute;
+		height: 150px;
+		width: 150px;
+		animation: idle 6s ease-in-out infinite;
+		svg {
+			fill: white;
+			width: 100%;
+			height: 100%;;
+		}
+		&:nth-of-type(1) {
+			top: -150px;
+			left: -150px;
+			animation-delay: .5s;
+			svg {
+				fill: #6eeb83;
+			}
+		}
+		&:nth-of-type(2) {
+			top: -50px;
+			left: -300px;
+			animation-delay: 2s;
+			svg {
+				fill: #1be7ff;
+			}
+		}
+		&:nth-of-type(3) {
+			top: -100px;
+			right: -100px;
+			animation-delay: 2.5s;
+			svg {
+				fill: #e4ff1a;
+			}
+		}
+		&:nth-of-type(4) {
+			top: -20px;
+			right: -250px;
+			animation-delay: 3s;
+			svg {
+				fill: #e500a4;
+			}
+		}
+	}
+}
+
+.birthday-cake {
+	color: white;
+	margin: 1rem 0;
+	svg {
+		width: 200px;
+		height: 200px;
+		fill: transparent;
+		stroke: #6eeb83;
+		stroke-width: 4px;
+		stroke-dasharray: 5000;
+		stroke-dashoffset: 5000;
+	}
+
+.hb-container {
+	color: white;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	position: relative;
+}
+
+
+/*@keyframes showUp {
+	from {
+		transform: translateY(85px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes blinkColor {
+	78% {
+		color: #6eeb83;
+		text-shadow: 0 0 10px #6eeb83;
+	}
+	79% {
+		color: lighten(, 10%);
+		text-shadow: 0 0 1px darken(#6eeb83, 40%);
+	}
+	81% {
+		color: #6eeb83;
+		text-shadow: 0 0 10px #6eeb83;
+	}
+	82% {
+		color: lighten(, 10%);
+		text-shadow: 0 0 1px darken(#6eeb83, 40%);
+	}
+	83% {
+		color: #6eeb83;
+		text-shadow: 0 0 10px #6eeb83;
+	}
+	92% {
+		color: lighten(, 10%);
+		text-shadow: 0 0 1px darken(#6eeb83, 40%);
+	}
+	92.5% {
+		color: #6eeb83;
+		text-shadow: 0 0 10px #6eeb83;
+	}
+}
+
+@keyframes showDown {
+	from {
+		transform: translateY(-85px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes hueRotation {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
+
+@keyframes idle {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+*/
+
+
+$vanilla: #f0e4d0;
+$chocolate: #553c13;
+
+body {
+    background-color: #333;
+}
+
+@mixin foodColoring($color) {
+    background-color: $color;
+    box-shadow:
+        0 2px 0px lighten($color, 5%),
+        0 4px 0px darken($color, 8.2%),
+        0 6px 0px darken($color, 8.4%),
+        0 8px 0px darken($color, 8.6%),
+        0 10px 0px darken($color, 8.8%),
+        0 12px 0px darken($color, 9%),
+        0 14px 0px darken($color, 9.2%),
+        0 16px 0px darken($color, 9.4%),
+        0 18px 0px darken($color, 9.6%),
+        0 20px 0px darken($color, 9.8%),
+        0 22px 0px darken($color, 10%),
+        0 24px 0px darken($color, 10.2%),
+        0 26px 0px darken($color, 10.4%),
+        0 28px 0px darken($color, 10.6%),
+        0 30px 0px darken($color, 10.8%);
+}
+
+.cake {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -125px;
+}
+
+.plate {
+    width: 270px;
+    height: 110px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    box-shadow:
+        0 2px 0 darken(#ccc, 10%),
+        0 4px 0 darken(#ccc, 10%),
+        0 5px 40px rgba(black, 0.5);
+}
+
+.cake > * {
+    position: absolute;
+}
+
+.layer {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    @include foodColoring($chocolate);
+}
+
+.layer-top { top: 0px; }
+.layer-middle { top: 33px; }
+.layer-bottom { top: 66px; }
+
+.icing {
+    top: 2px;
+    left: 5px;
+    background-color: $vanilla;
+    width: 240px;
+    height: 90px;
+    border-radius: 50%;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        bottom: 6px;
+        left: 5px;
+        background-color: lighten($vanilla, 3%);
+        box-shadow:
+            0 0 4px lighten($vanilla, 5%),
+            0 0 4px lighten($vanilla, 5%),
+            0 0 4px lighten($vanilla, 5%);
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+.drip {
+    display: block;
+    width: 50px;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: $vanilla;
+}
+
+.drip1 {
+    top: 53px;
+    left: 5px;
+    transform: skewY(15deg);
+    height: 48px;
+    width: 40px;
+}
+
+.drip2 {
+    top: 69px;
+    left: 181px;
+    transform: skewY(-15deg);
+}
+
+.drip3 {
+    top: 54px;
+    left: 90px;
+    width: 80px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.candle {
+    background-color: #7B020B;
+    width: 16px;
+    height: 50px;
+    border-radius: 8px / 4px;
+    top: -20px;
+    left: 50%;
+    margin-left: -8px;
+    z-index: 10;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: lighten(#7B020B, 10%);
+    }
+}
+
+.flame {
+    position: absolute;
+    background-color: orange;
+    width: 15px;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+    top: -34px;
+    left: 50%;
+    margin-left: -7.5px;
+    z-index: 10;
+    box-shadow:
+        0 0 10px rgba(orange, 0.5),
+        0 0 20px rgba(orange, 0.5),
+        0 0 60px rgba(orange, 0.5),
+        0 0 80px rgba(orange, 0.5);
+    transform-origin: 50% 90%;
+    animation: flicker 1s ease-in-out alternate infinite;
+}
+
+@keyframes flicker {
+    0% {
+        transform: skewX(5deg);
+        box-shadow: 
+            0 0 10px rgba(orange, 0.2),
+            0 0 20px rgba(orange, 0.2),
+            0 0 60px rgba(orange, 0.2),
+            0 0 80px rgba(orange, 0.2) }
+    25% {
+        transform: skewX(-5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
+    50% {
+        transform: skewX(10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.3),
+            0 0 20px rgba(orange, 0.3),
+            0 0 60px rgba(orange, 0.3),
+            0 0 80px rgba(orange, 0.3) }
+    75% {
+        transform: skewX(-10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.4),
+            0 0 20px rgba(orange, 0.4),
+            0 0 60px rgba(orange, 0.4),
+            0 0 80px rgba(orange, 0.4) }
+    100% {
+        transform: skewX(5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
+}
+
+
+
+
+	</style>
+</head>
+<body>
+
+<canvas id="screen"></canvas>
+  <h2>HAPPY BIRTHDAY</h2>
+  <h1>BELLAAAA!<br>&#x1F973;&#127882;&#127881;&#127874;</h1>
+
+
+
+
+<h1 class="challenge-title">In Honor of the Most Wonderful Being </h1>
+<h2 class="challenge-subtitle">#ItsYourLegalDayyy</h2>
+
+
+
+
+<!-- cake start -->
+
+<div class="cake">
+    <div class="plate"></div>
+    <div class="layer layer-bottom"></div>
+    <div class="layer layer-middle"></div>
+    <div class="layer layer-top"></div>
+    <div class="icing"></div>
+    <div class="drip drip1"></div>
+    <div class="drip drip2"></div>
+    <div class="drip drip3"></div>
+    <div class="candle">
+        <div class="flame"></div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+
+
+<script type="text/javascript">
+
+
+
+	var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight;
+var controller;
+
+var minVx = -10;
+var deltaVx = 20;
+var minVy = 25
+var deltaVy = 15;
+var minParticleV = 5;
+var deltaParticleV = 5;
+
+var gravity = 1;
+
+var explosionRadius = 500;
+var bombRadius = 3;
+var explodingDuration = 10;
+var explosionDividerFactor = 5; // I couldn't find a better name. Got any?
+
+var nBombs = 1; // initial
+var percentChanceNewBomb = 2;
+
+function Color(min) {
+  this.style = 'hsla(' + (Math.random() * 255) + ', 100%, 50%, 1.0)';
+};
+
+function colorValue(min) {
+  return Math.floor(Math.random() * (255 - min) + min);
+}
+
+function createColorStyle(r, g, b) {
+  return 'rgba(' + r + ',' + g + ',' + b + ', 0.8)';
+}
+
+// A Bomb. Or firework.
+function Bomb() {
+  var self = this;
+  self.radius = bombRadius;
+  self.previousRadius = bombRadius;
+  self.explodingDuration = explodingDuration;
+  self.hasExploded = false;
+  self.alive = true;
+  self.color = new Color(160);
+
+  self.px = (window.innerWidth / 4) + (Math.random() * window.innerWidth / 2);
+  self.py = window.innerHeight;
+  self.vx = minVx + Math.random() * deltaVx;
+  self.vy = (minVy + Math.random() * deltaVy) * -1;
+
+  self.duration = 
+    self.update = function(particlesVector) {
+    if (self.hasExploded) {
+      var deltaRadius = explosionRadius - self.radius;
+      self.previousRadius = self.radius;
+      self.radius += deltaRadius / explosionDividerFactor;
+      self.explodingDuration--;
+      if (self.explodingDuration == 0) {
+        self.alive = false;
+      }
+    } else {
+      self.vx += 0;
+      self.vy += gravity;
+      if (self.vy >= 0) { // invertion point
+        self.explode(particlesVector);
+      }
+      self.px += self.vx;
+      self.py += self.vy;
+    }
+  };
+
+  self.draw = function(ctx) {
+    ctx.beginPath();
+    ctx.arc(self.px, self.py, self.previousRadius, 0, Math.PI * 2, false);
+    if (self.hasExploded) {
+    } else {
+      ctx.fillStyle = self.color.style;
+      ctx.lineWidth = 1;
+      ctx.fill();
+    }
+  };
+
+  self.explode = function(particlesVector) {
+    self.hasExploded = true;
+    var e = 3 + Math.floor(Math.random() * 3);
+    for(var j = 0; j < e; j++) {
+      var n = 10 + Math.floor(Math.random() * 21); // 10 - 30
+      var speed = minParticleV + Math.random() * deltaParticleV;
+      var deltaAngle = 2 * Math.PI / n;
+      var initialAngle = Math.random() * deltaAngle;
+      for(var i = 0; i < n; i++) {
+        particlesVector.push(new Particle(self,  i * deltaAngle + initialAngle, speed));
+      }
+    }
+  };
+
+}
+
+function Particle(parent, angle, speed) {
+  var self = this;
+  self.px = parent.px;
+  self.py = parent.py;
+  self.vx = Math.cos(angle) * speed;
+  self.vy = Math.sin(angle) * speed;
+  self.color = parent.color;
+  self.duration = 40 + Math.floor(Math.random() * 20);
+  self.alive = true;
+
+  self.update = function(){
+    self.vx += 0;
+    self.vy += gravity / 10;
+
+    self.px += self.vx;
+    self.py += self.vy;
+    self.radius = 3;
+
+    self.duration--;
+    if(self.duration <= 0){
+      self.alive = false;
+    }
+  };
+
+  self.draw = function(ctx) {
+    ctx.beginPath();
+    ctx.arc(self.px, self.py, self.radius, 0, Math.PI * 2, false);
+    ctx.fillStyle = self.color.style;
+    ctx.lineWidth = 1;
+    ctx.fill();
+  };
+}
+
+function Controller() {
+  var self = this;
+  self.canvas = document.getElementById("screen");
+  self.canvas.width = screenWidth;
+  self.canvas.height = screenHeight;
+  self.ctx = self.canvas.getContext('2d');
+  
+  function setSpeedParams() {
+    var heightReached = 0;
+    var vy = 0;
+    while (heightReached < screenHeight && vy >= 0){
+      vy += gravity;
+      heightReached += vy;
+    }
+    minVy = vy / 2;
+    deltaVy = vy - minVy;
+    vx = (1 / 4) * screenWidth / (vy / 2);
+    minVx = -vx;
+    deltaVx = 2*vx;
+  };
+  
+  self.resize = function() {
+    screenWidth = window.innerWidth;
+    screenHeight = window.innerHeight;
+    self.canvas.width = screenWidth;
+    self.canvas.height = screenHeight;
+    setSpeedParams();
+  };
+  
+  self.resize();
+  window.onresize = self.resize;
+  self.init = function(){
+    self.readyBombs = [];
+    self.explodedBombs = [];
+    self.particles = [];
+    for(var i = 0; i < nBombs; i++){
+      self.readyBombs.push(new Bomb());
+    }
+  }
+  
+  self.update = function(){
+    var aliveBombs = [];
+    while(self.explodedBombs.length > 0){
+      var bomb = self.explodedBombs.shift();
+      bomb.update();
+      if (bomb.alive) {
+        aliveBombs.push(bomb);
+      }
+    }
+    self.explodedBombs = aliveBombs;
+    var notExplodedBombs = [];
+    while (self.readyBombs.length > 0) {
+      var bomb = self.readyBombs.shift();
+      bomb.update(self.particles);
+      if (bomb.hasExploded){
+        self.explodedBombs.push(bomb);
+      } else {
+        notExplodedBombs.push(bomb);
+      }
+    }
+    self.readyBombs = notExplodedBombs;
+    var aliveParticles = [];
+    while (self.particles.length > 0) {
+      var particle = self.particles.shift();
+      particle.update();
+      if (particle.alive){
+        aliveParticles.push(particle);
+      }
+    }
+    self.particles = aliveParticles;
+  }
+
+  self.draw = function() {
+    self.ctx.beginPath();
+    self.ctx.fillStyle='rgba(0, 0, 0, 0.1)'; // Ghostly effect
+    self.ctx.fillRect(0, 0, self.canvas.width, self.canvas.height);
+    self.ctx.globalCompositeOperation = 'lighter';
+    for (var i = 0; i < self.readyBombs.length; i++){
+      self.readyBombs[i].draw(self.ctx);
+    }
+    for (var i = 0; i < self.explodedBombs.length; i++){
+      self.explodedBombs[i].draw(self.ctx);
+    }
+    for (var i = 0; i < self.particles.length; i++){
+      self.particles[i].draw(self.ctx);
+    }
+    self.ctx.globalCompositeOperation = 'source-over';
+  }
+  
+  self.animation = function() {
+    self.update();
+    self.draw();
+    if (Math.random() * 100 < percentChanceNewBomb) {
+      self.readyBombs.push(new Bomb());
+    }
+    requestAnimationFrame(self.animation);
+  }
+}
+
+var controller = new Controller();
+controller.init();
+requestAnimationFrame(controller.animation);
+
+
+
+
+
+
+
+
+
+
+</script>
+<script type="module">
+
+import anime from "https://cdn.skypack.dev/animejs@3.2.1";
+
+anime({
+  targets: '.birthday-cake svg path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 5000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'forwards',
+});
+</script>
+</html>
